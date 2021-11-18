@@ -39,21 +39,22 @@ public class Proyecto6 {
 		System.out.println("Ahora dime su altura en metros");
 		float altura3 = Float.parseFloat(lector.nextLine());
 		
-		float centimetro1 = altura1*100;
-		float centimetro2 = altura2*100;
-		float centimetro3 = altura3*100;
+		short centimetro1 = (short)(altura1*100);
+		short centimetro2 = (short)(altura2*100);
+		short centimetro3 = (short)(altura3*100);
 		
-		double media = (centimetro1 + centimetro2 + centimetro3)/3;
+		float media = (centimetro1 + centimetro2 + centimetro3)/3;
 		
 		System.out.println("La media en centimetros de las 3 alturas es: " + media + "cm");
 		
 		System.out.println("Suponiendo que estamos en el año 2021 las personas han nacido en el siglo: ");
 		
-		int edad1 = 2021-anioNacimiento1;
-		int edad2 = 2021-anioNacimiento2;
-		int edad3 = 2021-anioNacimiento3;
+		byte edad1 = (byte)(2021-anioNacimiento1);
+		byte edad2 = (byte)(2021-anioNacimiento2);
+		byte edad3 = (byte)(2021-anioNacimiento3);
 		
 		
+		System.out.println("La primera persona nacio en el siglo "+(anioNacimiento1));
 		if (anioNacimiento1 < 2000) {
 			System.out.println("La primera persona nacio en el siglo XX");
 		}
