@@ -43,7 +43,7 @@ public class Proyecto6 {
 		short centimetro2 = (short)(altura2*100);
 		short centimetro3 = (short)(altura3*100);
 		
-		float media = (centimetro1 + centimetro2 + centimetro3)/3;
+		short media = (short)((centimetro1 + centimetro2 + centimetro3)/3);
 		
 		System.out.println("La media en centimetros de las 3 alturas es: " + media + "cm");
 		
@@ -53,42 +53,23 @@ public class Proyecto6 {
 		byte edad2 = (byte)(2021-anioNacimiento2);
 		byte edad3 = (byte)(2021-anioNacimiento3);
 		
-		
-		System.out.println("La primera persona nacio en el siglo "+(anioNacimiento1));
-		if (anioNacimiento1 < 2000) {
-			System.out.println("La primera persona nacio en el siglo XX");
-		}
-		
-		if (anioNacimiento2 < 2000) {
-			System.out.println("La segunda persona nacio en el siglo XX");
-		}
-		
-		if (anioNacimiento3 < 2000) {
-			System.out.println("La tercera persona nacio en el siglo XX");
-		}
-		
-		if (anioNacimiento1 >= 2000) {
-			System.out.println("La primera persona nacio en el siglo XXI");
-		}
-		
-		if (anioNacimiento2 >= 2000) {
-			System.out.println("La segunda persona nacio en el siglo XXI");
-		}
-		
-		if (anioNacimiento3 >= 2000) {
-			System.out.println("La tercera persona nacio en el siglo XXI");
-		}
-		
-		
 		System.out.println("La edad de la primera persona es " + edad1 + " años");
 		System.out.println("La edad de la segunda persona es " + edad2 + " años");
 		System.out.println("La edad de la tercera persona es " + edad3 + " años");
+		
+		
+		System.out.println("La primera persona nacio en el siglo "+(anioNacimiento1/100)+1);
+		System.out.println("La segunda persona nacio en el siglo "+(anioNacimiento2/100)+1);
+		System.out.println("La tercera persona nacio en el siglo "+(anioNacimiento3/100)+1);
+				
 		
 		byte contHombre = 0;
 		byte contMujer = 0;
 		
 		if (genero1 == 'h') {
 			contHombre += 1;
+		}else {
+			contMujer += 1;
 		}
 		
 		if (genero2 == 'h') {
@@ -100,7 +81,6 @@ public class Proyecto6 {
 		}
 		
 		if (genero1 == 'm') {
-			contMujer += 1;
 		}
 		
 		if (genero2 == 'm') {
@@ -135,7 +115,7 @@ public class Proyecto6 {
 		System.out.println("Suponiendo que estamos en el año 2021 la segunda persona ha vivido unos " + dias2 + " días.");
 		System.out.println("Suponiendo que estamos en el año 2021 la tercera persona ha vivido unos " + dias3 + " días.");
 		
-		System.out.println("Suponiendo que estamos en el año 2021 la primera persona ha vivido unos " + ((2021 - anioNacimiento1) * 365)*24 + " horas." );
+		System.out.println("Suponiendo que estamos en el año 2021 la primera persona ha vivido unos " + (dias1*24 + " horas.") );
 		System.out.println("Suponiendo que estamos en el año 2021 la segunda persona ha vivido unos " + ((2021 - anioNacimiento2) * 365)*24 + " horas." );
 		System.out.println("Suponiendo que estamos en el año 2021 la tercera persona ha vivido unos " + ((2021 - anioNacimiento3) * 365)*24 + " horas." );
 		
