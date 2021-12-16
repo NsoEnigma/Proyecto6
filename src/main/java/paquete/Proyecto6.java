@@ -58,9 +58,9 @@ public class Proyecto6 {
 		System.out.println("La edad de la tercera persona es " + edad3 + " años");
 		
 		
-		System.out.println("La primera persona nacio en el siglo "+(anioNacimiento1/100)+1);
-		System.out.println("La segunda persona nacio en el siglo "+(anioNacimiento2/100)+1);
-		System.out.println("La tercera persona nacio en el siglo "+(anioNacimiento3/100)+1);
+		System.out.println("La primera persona nacio en el siglo "+((anioNacimiento1/100)+1));
+		System.out.println("La segunda persona nacio en el siglo "+((anioNacimiento2/100)+1));
+		System.out.println("La tercera persona nacio en el siglo "+((anioNacimiento3/100)+1));
 				
 		
 		byte contHombre = 0;
